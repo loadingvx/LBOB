@@ -13,8 +13,8 @@ function strcpy always copy "null-terminator".
 	/* Try this: */
 	char* buf_for_string = malloc(strlen(string) + 1);
 	strcpy(buf_for_string, string);
-  
-	int* buf_for_int = malloc(30);
+	
+	int* buf_for_int = malloc(sizeof(int)*30);
 	for (int i = 0; i<30; i++) {
 		*(buf_for_int + i) = i;
 	}
